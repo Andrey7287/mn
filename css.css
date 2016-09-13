@@ -1,0 +1,58 @@
+/*
+Error: File to import not found or unreadable: ../node_modules/normalize.scss/normalize.scss.
+       Load path: D:/htdocs/mn/sass
+        on line 1 of sass/css.scss
+
+1: @import "../node_modules/normalize.scss/normalize.scss";
+2: @import "../node_modules/slick-carousel/slick/slick.scss";
+3: @import "../node_modules/slick-carousel/slick/slick-theme.scss";
+4: @import "../node_modules/jquery-fancybox/source/scss/jquery.fancybox.scss";
+5: @import "../node_modules/jquery.formstyler/jquery.formstyler.css";
+6: @import "mixins";
+
+Backtrace:
+sass/css.scss:1
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:67:in `rescue in import'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:45:in `import'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:28:in `imported_file'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:37:in `css_import?'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:293:in `watch'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin.rb:109:in `method_missing'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:383:in `watch_or_update'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:51:in `process_result'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/base.rb:52:in `parse'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/base.rb:19:in `parse!'
+c:/ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.21/bin/sass:13:in `<top (required)>'
+C:/Ruby200/bin/sass:23:in `load'
+C:/Ruby200/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../node_modules/normalize.scss/normalize.scss.\A        Load path: D:/htdocs/mn/sass\A         on line 1 of sass/css.scss\A \A 1: @import \"../node_modules/normalize.scss/normalize.scss\";\A 2: @import \"../node_modules/slick-carousel/slick/slick.scss\";\A 3: @import \"../node_modules/slick-carousel/slick/slick-theme.scss\";\A 4: @import \"../node_modules/jquery-fancybox/source/scss/jquery.fancybox.scss\";\A 5: @import \"../node_modules/jquery.formstyler/jquery.formstyler.css\";\A 6: @import \"mixins\";"; }
