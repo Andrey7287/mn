@@ -1,0 +1,70 @@
+.header {
+  padding: 13px 0;
+  &__logo {
+    float: left;
+    margin-right: 15px;
+  }
+  &__title {
+    color: $blue;
+    @include font(800, 16px, 20px, $arial);
+    text-transform: uppercase;
+    margin-top: 15px;
+    span {
+      display: block;
+      @include font(800, 49px, 38px, $arial);
+      text-indent: -2px;
+    }
+  }
+  &__options {
+    height: 28px;
+    margin-top: 18px;
+    $icons-top: 'img/icons-top.png';
+    a {
+      display: inline-block;
+      text-indent: -9999px;
+      @include font(400, 14px, 20px);
+      color: $default;
+      text-decoration: underline;
+      width: 20px;
+      margin-left: 15px;
+    }
+    .personal {
+      @include sprite-pos($icons-top, 20, 20, 0, 0, 0, 0);
+      text-indent: 0;
+      padding: 0 25px;
+      width: auto;
+      margin-left: 0;
+    }
+    .home {
+      @include sprite-pos($icons-top, 20, 20, 0, 1, 0, 0);
+    }
+    .mail{
+      @include sprite-pos($icons-top, 20, 20, 0, 2, 0, 0);
+    }
+    .news{
+      @include sprite-pos($icons-top, 20, 20, 0, 3, 0, 0);
+    }
+    .lang{
+      @include sprite-pos($icons-top, 20, 20, 0, 4, 0, 0);
+    }
+  }
+}
+.search {
+  position: relative;
+  &__input {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #f0f0ef;
+    color: $grey;
+    padding: 0 30px 0 10px;
+    @include font(400, 12px, 25px);
+    &:focus {
+      outline: none;
+    }
+  }
+  &__submit {
+    position: absolute;
+    top: calc(50% - 7px);
+    right: 8px;
+  }
+}

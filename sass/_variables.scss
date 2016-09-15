@@ -1,14 +1,25 @@
 /* Fonts */
-$site-font: 'Open Sans', sans-serif;
+$pt-sans: 'PT Sans', sans-serif;
+$sans-caption: 'PT Sans Caption', sans-serif;
+$arial: 'Arial', sans-serif;
 
-/* Bkg colors */
-$soft-grey: #f1f1f1;
-$button: #ff9800;
-$menu: #cff6f6;
+$default-font: $pt-sans;
+$default-size: 16px;
+$default-height: 22px;
 
-/* Color */
-$paragraph: #545454;
-$header-grey: #757676;
-$site-main: #696969;
-$link: #007f7e;
-$link-orange: #f57c00;
+$grey: #777;
+$white: #fafafa;
+$yellow: #ffc61f;
+$blue: #034a7d;
+
+$default: #545454;
+
+$link: #045a96;
+$link-hov: #ea3f00;
+
+/* Menu */
+$menu: #045a96;
+$menu-hov: #eaae00;
+$menu-height: 50px;
+
+

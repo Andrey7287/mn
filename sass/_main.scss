@@ -1,1 +1,8 @@
-
+.news-all {
+  @include font(400, 12px, 45px);
+  color: $grey;
+  text-transform: uppercase;
+  display: block;
+  float: right;
+  text-decoration: underline;
+}

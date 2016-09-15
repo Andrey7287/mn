@@ -2,14 +2,232 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   <title>...</title>
   <link rel="stylesheet" href="css.css" />
-  <link rel="stylesheet" href="node_modules/jquery.formstyler/jquery.formstyler.css" />
 </head>
 
 <body>
-<h1>Hello</h1>
+
+  <header class="header">
+    <div class="container header__top">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="header__logo">
+            <a href="/"><img src="images/logo.png" alt="мир науки логотип" /></a>
+          </div>
+          <div class="header__title">
+            некоммерческое партнерство
+            <span class="name">МИР НАУКИ</span>
+          </div>
+        </div>
+        <div class="col-xs-4 col-xs-offset-2">
+          <div class="header__options">
+            <a href="#" class="personal">Личный кабинет</a>
+            <a href="#" class="home">Домой</a>
+            <a href="#" class="mail">Почта</a>
+            <a href="#" class="news">Новости</a>
+            <a href="#" class="lang">Язык</a>
+          </div>
+          <div class="search">
+            <form action="/search/" method="get">
+              <input class="search__input" type="text" name="q" placeholder="Поиск по сайту" />
+              <input class="search__submit" type="image" src="/img/search.png" alt="Найти" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul class="site-nav">
+          <li class="site-nav__item"><a href="" class="site-nav__link"><span>О НП «мир науки»</span></a></li>
+          <li class="site-nav__item"><a href="" class="site-nav__link"><span>Наши проекты</span></a></li>
+          <li class="site-nav__item"><a href="" class="site-nav__link"><span>совместные проекты</span></a></li>
+          <li class="site-nav__item"><a href="" class="site-nav__link"><span>новости</span></a></li>
+          <li class="site-nav__item"><a href="" class="site-nav__link"><span>контакты</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- overal site content wrapper start-->
+  <div class="container">
+
+    <!-- slider start -->
+    <div class="slider-wrapper">
+      <div class="site-slider">
+        <div class="site-slider__item">
+          <img class="site-slider__img" src="images/banner.jpg" alt="#" />
+          <div class="site-slider__inner">
+            <div class="site-slider__title">нп «МИР НАУКИ» исполнилось<br />
+             <span>15 лет!</span>
+            </div>
+            <div class="site-slider__txt">
+              Краткий текст в три строки, краткий текст в три строки, краткий текст в три строки, краткий текст в три строки, краткий текст в три строки, краткий текст в три строки, краткий текст в три строки, краткий текст в три строки, краткий текст в три строки.
+            </div>
+            <a href="#" class="site-slider__link">Подробнее</a>
+          </div>
+        </div>
+        <div class="site-slider__item">
+          <img class="site-slider__img" src="images/banner.jpg" alt="#" />
+          <div class="site-slider__inner">
+            <div class="site-slider__title">нп «МИР НАУКИ» исполнилось<br />
+             <span>15 лет!</span>
+            </div>
+            <div class="site-slider__txt">
+              Краткий текст в три строки, краткий текст в три строки, краткий текст в три строки, краткий текст в три строки, краткий текст в три строки, краткий текст в три строки, краткий текст в три строки, краткий текст в три строки, краткий текст в три строки.
+            </div>
+            <a href="#" class="site-slider__link">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <button class="left">previos</button>
+      <button class="right">next</button>
+    </div>
+    <!-- slider end -->
+
+    <div class="row">
+      <div class="col-xs-4">
+
+        <a href="#" class="news-all">Все новости »</a>
+        <div class="h2">новости</div>
+
+      </div>
+    </div>
+
+    <!--news block start-->
+    <div class="row aside">
+      <div class="col-xs-4">
+        <div class="news">
+          <img class="news__img" src="images/news-banner.jpg" alt="#">
+          <div class="news__date">
+            12.07.2016
+          </div>
+          <a href="#" class="news__link news__link--big">
+            Лауреаты Конкурса<br />«Мы — Дети Нефтяников»
+          </a>
+          <div class="news__txt">
+            По итогам работы Жюри, решением Оргкомитета утверждены Лауреаты Всероссийского отраслевого конкурса<br />«Мы — Дети Нефтяников-2008».
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="news">
+          <div class="news__date">
+            12.07.2016
+          </div>
+          <a href="#" class="news__link">
+          Поздравление победителя конкурса<br />«Мы — Дети Нефтяников», члена  «Золотого фонда» — Дианы Жуковой
+          </a>
+        </div>
+        <div class="news">
+          <div class="news__date">
+            12.07.2016
+          </div>
+          <a href="#" class="news__link">
+          21-ый Всемирный Нефтяной Конгресс (WPC)
+          </a>
+        </div>
+        <div class="news">
+          <div class="news__date">
+            12.07.2016
+          </div>
+          <a href="#" class="news__link">
+          НП «Мир Науки» сотрудничает<br />с Организаторами конкурса «Во Имя Мира на Земле-2013»
+          </a>
+        </div>
+        <div class="news">
+          <div class="news__date">
+            12.07.2016
+          </div>
+          <a href="#" class="news__link">
+          Приглашаем добровольцев для работы<br />на мероприятиях, нефтяной и газовой отрасли!
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="news">
+          <div class="news__date">
+            12.07.2016
+          </div>
+          <a href="#" class="news__link">
+          НП «Мир Науки» сотрудничает<br />с Организаторами конкурса «Во Имя Мира на Земле-2013»
+          </a>
+        </div>
+        <div class="news">
+          <div class="news__date">
+            12.07.2016
+          </div>
+          <a href="#" class="news__link">
+          Приглашаем добровольцев для работы<br />на мероприятиях, нефтяной и газовой отрасли!
+          </a>
+        </div>
+        <div class="news">
+          <div class="news__date">
+            12.07.2016
+          </div>
+          <a href="#" class="news__link">
+          Поздравление победителя конкурса «Мы — Дети Нефтяников», члена  «Золотого фонда» — Дианы Жуковой
+          </a>
+        </div>
+        <div class="news">
+          <div class="news__date">
+            12.07.2016
+          </div>
+          <a href="#" class="news__link">
+          21-ый Всемирный Нефтяной Конгресс (WPC)
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- news block end -->
+
+    <!-- slider bottom -->
+    <div class="row">
+      <div class="col-xs-5">
+
+        <div class="h2">партнеры и проекты</div>
+
+      </div>
+    </div>
+    <div class="slider-wrapper slider-wrapper--bottom">
+      <div class="col-xs-10 col-xs-offset-1 bottom-slider">
+        <div class="bottom-slider__item"><img src="img/tmp-banner.jpg" alt=""></div>
+        <div class="bottom-slider__item"><img src="img/tmp-banner.jpg" alt=""></div>
+        <div class="bottom-slider__item"><img src="img/tmp-banner.jpg" alt=""></div>
+        <div class="bottom-slider__item"><img src="img/tmp-banner.jpg" alt=""></div>
+        <div class="bottom-slider__item"><img src="img/tmp-banner.jpg" alt=""></div>
+        <div class="bottom-slider__item"><img src="img/tmp-banner.jpg" alt=""></div>
+        <div class="bottom-slider__item"><img src="img/tmp-banner.jpg" alt=""></div>
+        <div class="bottom-slider__item"><img src="img/tmp-banner.jpg" alt=""></div>
+        <div class="bottom-slider__item"><img src="img/tmp-banner.jpg" alt=""></div>
+        <div class="bottom-slider__item"><img src="img/tmp-banner.jpg" alt=""></div>
+      </div>
+      <button class="prev">previos</button>
+      <button class="next">next</button>
+
+    </div>
+    <!-- slider bottom -->
+
+  <!--overal site content wrapper end-->
+  </div>
+
+  <footer class="footer">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 footer__left">
+          <div class="footer__copy">©  «Некоммерческое партнерство по Популяризации Мир Науки» 2001–2016</div>
+<small>Все права защищены. Копирование и использование полных материалов  запрещено, частичное цитирование возможно только при условии гиперссылки на сайт <a href="http://www.mirnauki.ru">www.mirnauki.ru</a></small>
+<div class="footer__copy">© <a href="http://infodesign.ru/">Создание сайта и дизайн</a> «ИнфоДизайн» 2016</div>
+        </div>
+        <div class="col-xs-4 footer__right">
+          125047, Россия, г. Москва, а/я 338<br />
+          Телефон +7 495 928 71 96<br />
+          E-mail: info@mirnauki.ru
+        </div>
+      </div>
+    </div>
+
+  </footer>
   <script type="text/javascript" src="node_modules/requirejs/require.js" data-main="js/config"></script>
   <script>
     require(['config'], function () {

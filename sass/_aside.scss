@@ -1,0 +1,19 @@
+.aside {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.news {
+  &__img {
+    margin: 3px auto;
+  }
+  &__link{
+    margin-bottom: 10px;
+    display: inline-block;
+    &--big{
+      @include font(400, 22px);
+    }
+  }
+  &__date{
+    color: $grey;
+  }
+}

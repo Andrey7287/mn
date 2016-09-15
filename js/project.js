@@ -1,4 +1,4 @@
-define(['jquery', 'slick', 'slimscroll', 'styler'], function(){
+define(['jquery', 'slick'], function(){
 
   $.fn.ravno = function () {
     var maxH = -1;
@@ -9,6 +9,17 @@ define(['jquery', 'slick', 'slimscroll', 'styler'], function(){
     $cols.height(maxH);
   };
 
+  $('.site-slider').slick({
+    prevArrow: $('.left'),
+    nextArrow: $('.right'),
+    dots: true
+  });
+
+  $('.bottom-slider').slick({
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    slidesToShow: 5
+  });
 
 });
 

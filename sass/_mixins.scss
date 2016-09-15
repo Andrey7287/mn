@@ -6,23 +6,6 @@
   }
 }
 
-@mixin hone($background: #fff) {
-  overflow:hidden;
-  position:relative;
-  span {
-    z-index: 2;
-    position: relative;
-    background: $background;
-  }
-  &:before {
-    bottom: 1px;
-    position:absolute;
-    z-index: 1;
-    color: darken(#ecf2f1, 10%);
-    content: "...................................................................................................................................................................................................................................................................................................................................................";
-  }
-}
-
 /*Descriptions
 $path - url to sprite img
 $width - width of the single image in target sprite
@@ -45,8 +28,8 @@ $row and $cell - amount of rows and cells in sprite
   position: relative;
   &::before {
   position: absolute;
-  top: $pos-y + px;
-  left: $pos-x + px;
+  top: $pos-y;
+  left: $pos-x;
   content: "";
   display: inline-block;
   width: $width+px;
@@ -55,27 +38,6 @@ $row and $cell - amount of rows and cells in sprite
   }
 }
 
-@mixin breakpoint($point) {
-  @if $point == desktop {
-  @media (min-width: 1024px) { @content; }
-  }
-  @if $point == tablet {
-  @media (min-width: 768px) and (max-width: 1023px) { @content; }
-  }
-  @if $point == tablet-desktop {
-  @media (min-width: 768px) { @content; }
-  }
-  @if $point == all-small {
-    @media (max-width: 1023px ) { @content; }
-  }
-  @if $point == mobile {
-  @media (max-width: 767px ) { @content; }
-  }
-  // Additional
-  @if $point == tablet-small {
-    @media (min-width: 426px) and (max-width: 767px) { @content; }
-  }
-  @if $point == mobile-small {
-    @media (max-width: 480px) { @content; }
-  }
+@mixin font($weight: 400, $size: $default-size, $height: $default-height, $font: $default-font){
+  font: $weight #{$size}/#{$height} $font;
 }

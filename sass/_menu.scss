@@ -1,0 +1,57 @@
+nav {
+  margin-top: 10px;
+}
+
+.site-nav {
+  display: table;
+  width: 100%;
+  &__item {
+    background: $menu;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: $menu-height;
+    border-right: 13px solid #2485ca;
+    position: relative; // for left white border position
+    transition: background 0.2s;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      @include font(400, 18px, 22px);
+      display: table;
+      width: 100%;
+      height: $menu-height;
+      span {
+        padding: 0 15px;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    &--active {
+      background: $menu-hov;
+      a {
+        color: darken($link, 7%);
+      }
+    }
+    &:hover  {
+      background: $menu-hov;
+      cursor: pointer;
+      border-right: 13px solid #fff;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -13px;
+        width: 13px;
+        height: $menu-height;
+        background: #fff;
+      }
+    }
+    &:first-child{
+      border-left: 13px solid #2485ca;
+    }
+  }
+}
