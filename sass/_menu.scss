@@ -1,7 +1,12 @@
+$border-color: #2485ca;
 nav {
   margin-top: 10px;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+
 }
 
+/* site menu */
 .site-nav {
   display: table;
   width: 100%;
@@ -11,7 +16,7 @@ nav {
     vertical-align: middle;
     text-align: center;
     height: $menu-height;
-    border-right: 13px solid #2485ca;
+    border-right: 13px solid $border-color;
     position: relative; // for left white border position
     transition: background 0.2s;
     a {
@@ -51,7 +56,38 @@ nav {
       }
     }
     &:first-child{
-      border-left: 13px solid #2485ca;
+      border-left: 13px solid $border-color;
+    }
+  }
+}
+/* left menu */
+.sub-nav {
+  margin: 13px 0;
+  padding: 0;
+  list-style: none;
+  &__item {
+    border-bottom: 1px solid #e2eff8;
+    box-sizing: border-box;
+    height: 44px;
+    &:first-child {
+      border-top: 1px solid #e2eff8;
+    }
+    a, span {
+      height: 44px;
+      color: $blue;
+      display: inline-block;
+      width: 100%;
+      text-transform: uppercase;
+      @include font(700, 16px, 44px, $sans-caption);
+      padding-left: 15px;
+      &:hover{
+        color: #ea3f00;
+      }
+    }
+    &--act{
+      span{
+        color: #ea3f00;
+      }
     }
   }
 }

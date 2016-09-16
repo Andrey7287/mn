@@ -3,7 +3,7 @@ $arrow-path: 'img/slider-arrows.png';
   position: relative;
   &--bottom{
     @include clearfix;
-    margin: 18px 0;
+    margin: 5px 0;
   }
   button {
     text-indent: -9999px;

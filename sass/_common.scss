@@ -57,11 +57,39 @@ nav {
 // Headers
 
 h1, .h1 {
-
+  @include font(700, 32px, 36px, $sans-caption);
+  text-transform: uppercase;
+  margin: 7px 0 13px;
 }
 h2, .h2 {
-  @include font(700, 32px, 34px, $sans-caption);
+  @include font(700, 22px, 26px, $sans-caption);
   text-transform: uppercase;
+  margin: 20px 0;
+}
+h3, .h3 {
+  @include font(700, 18px, 22px, $sans-caption);
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+p {
+  margin: 12px 0;
 }
 
 
+// List style
+ul:not(.site-nav):not(.sub-nav) {
+  margin: 7px 0;
+  padding: 0;
+  list-style: none;
+  li {
+    line-height: 26px;
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #2485ca;
+      margin: 0 7px 2px 0;
+    }
+  }
+}

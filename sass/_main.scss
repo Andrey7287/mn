@@ -1,8 +1,21 @@
-.news-all {
-  @include font(400, 12px, 45px);
-  color: $grey;
-  text-transform: uppercase;
-  display: block;
-  float: right;
-  text-decoration: underline;
+.breadcrumbs {
+  @include font(400, 14px);
+  color: $soft-grey;
+  a {
+    color: $soft-grey;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__item {
+    &::before{
+      content: "- ";
+    }
+    &:first-child {
+      padding-left: 0;
+      &::before{
+        content: "";
+      }
+    }
+  }
 }
