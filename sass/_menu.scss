@@ -80,6 +80,7 @@ nav {
       text-transform: uppercase;
       @include font(700, 16px, 44px, $sans-caption);
       padding-left: 15px;
+      text-decoration: none;
       &:hover{
         color: #ea3f00;
       }
